@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/q2"
+    android:orientation="vertical"
+    tools:context="com.example.admin.funquiz.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/playImage"
+        android:layout_width="223dp"
+        android:layout_height="62dp"
+        android:onClick="play"
+        android:src="@drawable/p1" />
+
+</LinearLayout>

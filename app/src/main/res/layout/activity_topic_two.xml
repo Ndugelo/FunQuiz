@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_topic_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.funquiz.TopicOne">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Funny Reasoning"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="1. Does England have a 4th of July?"
+            android:textColor="@android:color/white"
+            android:background="#2196F3"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B3E5FC"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question1A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="No" />
+
+            <RadioButton
+                android:id="@+id/question1A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/question1A3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="OMG! haw I don't know" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/question2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:background="#2196F3"
+            android:textStyle="bold"
+            android:text="2. What can you never eat for breakfast? "
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B3E5FC"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question2A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Pap"/>
+
+            <RadioButton
+                android:id="@+id/question2A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Breakfast"/>
+
+            <RadioButton
+                android:id="@+id/question2A3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Dinner"/>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/question3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:background="#2196F3"
+            android:textStyle="bold"
+            android:text="3. What question must always be answered ''Yes''?"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B3E5FC"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question3A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Does everyone have a biological mother?"/>
+
+            <RadioButton
+                android:id="@+id/question3A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Will everyone die someday?"/>
+
+            <RadioButton
+                android:id="@+id/question3A3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="What does Y-E-S spell?"/>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/question4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:background="#2196F3"
+            android:textStyle="bold"
+            android:text="4. How many sides does a circle have?"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B3E5FC"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question4A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Confused hei"/>
+
+            <RadioButton
+                android:id="@+id/question4A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="One, It's a circle"/>
+
+            <RadioButton
+                android:id="@+id/question4A3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="None"/>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/question5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:background="#2196F3"
+            android:textStyle="bold"
+            android:text="5. What rotates but still remains in the same place?"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B3E5FC"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question5A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Clock"/>
+
+            <RadioButton
+                android:id="@+id/question5A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Stairs"/>
+
+            <RadioButton
+                android:id="@+id/question5A3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Bottle (spin the bottle game)"/>
+
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ViewScore"
+                android:text="View Score"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:background="#039BE5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="4dp"
+                android:text="You scored: " />
+
+            <TextView
+                android:id="@+id/displayScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="4dp"
+                android:text="0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

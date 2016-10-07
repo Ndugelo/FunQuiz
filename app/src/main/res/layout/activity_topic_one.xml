@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_topic_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.funquiz.TopicOne">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Funny Mathematics"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/white"
+            android:background="#2196F3"
+            android:textStyle="bold"
+            android:text="1. Which 3 numbers have the same answer whether they’re added or multiplied together? "
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B3E5FC"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question1A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="3, 4 and 6" />
+
+            <RadioButton
+                android:id="@+id/question1A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="1, 2 and 3" />
+
+            <RadioButton
+                android:id="@+id/question1A3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="1, 4 and 3" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/question2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:background="#2196F3"
+            android:textStyle="bold"
+            android:text="2. There is a three digit number. The second digit is four times as big as the third digit, while the first digit is three less than the second digit. What is the number? "
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B3E5FC"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question2A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="151"/>
+
+            <RadioButton
+                android:id="@+id/question2A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="141"/>
+
+            <RadioButton
+                android:id="@+id/question2A3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="All the above"/>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/question3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:background="#2196F3"
+            android:textStyle="bold"
+            android:text="3. Sally is 54 years old and her mother is 80, how many years ago was Sally’s mother three times her age?"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B3E5FC"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question3A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="40"/>
+
+            <RadioButton
+                android:id="@+id/question3A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Yooh, I'm dead"/>
+
+            <RadioButton
+                android:id="@+id/question3A3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="41"/>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/question4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:background="#2196F3"
+            android:textStyle="bold"
+            android:text="4. I am an odd number. Take away one letter and I become even. What number am I?"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B3E5FC"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question4A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Error"/>
+
+            <RadioButton
+                android:id="@+id/question4A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Seven"/>
+
+            <RadioButton
+                android:id="@+id/question4A3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Twelve"/>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/question5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:background="#2196F3"
+            android:textStyle="bold"
+            android:text="5. Two of the following Three are alike in a certain way and hence form a group. Which one does not belong to the group?"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B3E5FC"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question5A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="70"/>
+
+            <RadioButton
+                android:id="@+id/question5A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="68"/>
+
+            <RadioButton
+                android:id="@+id/question5A3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="52"/>
+
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ViewScore"
+                android:text="View Score"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:background="#039BE5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/black"
+                android:text="You scored: " />
+
+            <TextView
+                android:id="@+id/displayScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:textColor="@android:color/black"
+                android:text="0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
