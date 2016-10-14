@@ -33,6 +33,7 @@
             android:textSize="16sp" />
 
         <RadioGroup
+            android:id="@+id/rGquestionOne"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#B3E5FC"
@@ -59,7 +60,18 @@
                 android:onClick="onRadioButtonClicked"
                 android:text="1, 4 and 3" />
 
+            <TextView
+                android:id="@+id/answerone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Answer"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+
         </RadioGroup>
+
+
 
 
         <TextView
@@ -74,8 +86,9 @@
             android:textSize="16sp" />
 
         <RadioGroup
+            android:id="@+id/questionTwo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="#B3E5FC"
             android:orientation="vertical">
 
@@ -100,6 +113,15 @@
                 android:onClick="onRadioButtonClicked"
                 android:text="All the above"/>
 
+            <TextView
+                android:id="@+id/answertwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Answer"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+
         </RadioGroup>
 
 
@@ -114,7 +136,9 @@
             android:text="3. Sally is 54 years old and her mother is 80, how many years ago was Sally’s mother three times her age?"
             android:textSize="16sp" />
 
+
         <RadioGroup
+            android:id="@+id/questionThree"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#B3E5FC"
@@ -141,6 +165,15 @@
                 android:onClick="onRadioButtonClicked"
                 android:text="41"/>
 
+            <TextView
+                android:id="@+id/answerthree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Answer"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+
         </RadioGroup>
 
 
@@ -156,6 +189,7 @@
             android:textSize="16sp" />
 
         <RadioGroup
+            android:id="@+id/questionFour"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#B3E5FC"
@@ -182,6 +216,15 @@
                 android:onClick="onRadioButtonClicked"
                 android:text="Twelve"/>
 
+            <TextView
+                android:id="@+id/answerfour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Answer"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+
         </RadioGroup>
 
 
@@ -197,6 +240,7 @@
             android:textSize="16sp" />
 
         <RadioGroup
+            android:id="@+id/questionFive"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#B3E5FC"
@@ -222,6 +266,15 @@
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
                 android:text="52"/>
+
+            <TextView
+                android:id="@+id/answerfive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Answer"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
 
         </RadioGroup>
 
@@ -251,15 +304,42 @@
                 android:text="You scored: " />
 
             <TextView
-                android:id="@+id/displayScore"
+            android:id="@+id/displayScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:textColor="@android:color/black"
+            android:text="0" />
+
+            <TextView
+                android:id="@+id/fivetxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="0dp"
                 android:textColor="@android:color/black"
-                android:text="0" />
+                android:text="/5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="viewAnswers"
+                android:text="@string/my_text"
+                android:textStyle="italic"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark" />
 
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Comment"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"/>
     </LinearLayout>
 
 </ScrollView>

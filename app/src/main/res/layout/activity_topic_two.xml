@@ -59,6 +59,15 @@
                 android:onClick="onRadioButtonClicked"
                 android:text="OMG! haw I don't know" />
 
+            <TextView
+                android:id="@+id/answerone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Answer"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+
         </RadioGroup>
 
 
@@ -100,6 +109,15 @@
                 android:onClick="onRadioButtonClicked"
                 android:text="Dinner"/>
 
+            <TextView
+                android:id="@+id/answertwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Answer"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+
         </RadioGroup>
 
 
@@ -140,6 +158,14 @@
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
                 android:text="What does Y-E-S spell?"/>
+            <TextView
+                android:id="@+id/answerthree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Answer"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
 
         </RadioGroup>
 
@@ -181,6 +207,14 @@
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
                 android:text="None"/>
+            <TextView
+                android:id="@+id/answerfour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Answer"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
 
         </RadioGroup>
 
@@ -223,6 +257,15 @@
                 android:onClick="onRadioButtonClicked"
                 android:text="Bottle (spin the bottle game)"/>
 
+            <TextView
+                android:id="@+id/answerfive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Answer"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+
         </RadioGroup>
 
 
@@ -248,7 +291,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginBottom="4dp"
-                android:text="You scored: " />
+                android:text="You scored: "
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/displayScore"
@@ -256,9 +300,37 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="0dp"
                 android:layout_marginBottom="4dp"
-                android:text="0" />
+                android:text="0"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="/5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="viewAnswers"
+                android:text="@string/my_text"
+                android:textStyle="italic"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark" />
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Comment"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"/>
 
     </LinearLayout>
 

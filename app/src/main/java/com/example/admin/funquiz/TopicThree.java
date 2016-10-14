@@ -1,10 +1,14 @@
 package com.example.admin.funquiz;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
+
+import static com.example.admin.funquiz.R.id.question1;
+import static com.example.admin.funquiz.R.id.question1A3;
 
 public class TopicThree extends AppCompatActivity {
 
@@ -38,6 +42,7 @@ public class TopicThree extends AppCompatActivity {
                     // Answer three, correct
                     score = score + 1;
                 break;
+
 
             //Check which radio button was clicked on question two
             case R.id.question2A1:
@@ -110,10 +115,67 @@ public class TopicThree extends AppCompatActivity {
         }
     }
 
+    //view score
     public void ViewScore(View view) {
         displayScore(score);
+
+        //Display passed in black color if score is equal or greater than 3, else failed in red color
+        if (score >= 3){
+            displayPassOrFail("Passed");
+            ((TextView)findViewById(R.id.comment)).setTextColor(Color.BLACK);
+        }
+        else{
+            displayPassOrFail("Failed");
+            ((TextView)findViewById(R.id.comment)).setTextColor(Color.RED);
+        }
     }
 
+    //view answers
+    public void viewAnswers(View view){
+        answerOne("It depends on what you're looking at in the mirror.");
+        answerTwo("Age");
+        answerThree("217");
+        answerFour("1");
+        answerFive("3");
+    }
+
+
+    //code for displaying answers
+    private void answerOne(String word) {
+        TextView quantityTextView = (TextView) findViewById(
+                R.id.answerone);
+        quantityTextView.setText("" + word);
+    }
+
+    private void answerTwo(String word) {
+        TextView quantityTextView = (TextView) findViewById(
+                R.id.answertwo);
+        quantityTextView.setText("" + word);
+    }
+    private void answerThree(String word) {
+        TextView quantityTextView = (TextView) findViewById(
+                R.id.answerthree);
+        quantityTextView.setText("" + word);
+    }
+    private void answerFour(String word) {
+        TextView quantityTextView = (TextView) findViewById(
+                R.id.answerfour);
+        quantityTextView.setText("" + word);
+    }
+    private void answerFive(String word) {
+        TextView quantityTextView = (TextView) findViewById(
+                R.id.answerfive);
+        quantityTextView.setText("" + word);
+    }
+
+    //code for displaying comment
+    private void displayPassOrFail(String word) {
+        TextView quantityTextView = (TextView) findViewById(
+                R.id.comment);
+        quantityTextView.setText("" + word);
+    }
+
+    //code for displaying score
     private void displayScore(int number) {
         TextView quantityTextView = (TextView) findViewById(
                 R.id.displayScore);

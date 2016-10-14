@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">"Fun Quiz "</string>
+    <string name="my_text"><u>View Answers</u></string>
 </resources>
